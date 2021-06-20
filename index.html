@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>loopstudios</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <ul id="main-nav" class="main-nav">
+            <div class="nav-mob">
+              <div class="nav-logo"><img src="./images/logo.svg" alt="" /></div>
+              <div class="nav-cross" id="nav-cross">
+                <img src="./images/icon-close.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="link-wrapper">
+              <li><a href="#">about</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">events</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">support</a></li>
+            </div>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <img src="./images/icon-hamburger.svg" alt="" />
+          </div>
+        </nav>
+        <div class="hero">
+          <div class="hero-content">
+            <h1>
+              immersive experiences that <br />
+              deliver
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="section">
+          <div class="section-image">
+            <img src="./images/mobile/image-interactive.jpg" alt="" />
+          </div>
+          <div class="section-content">
+            <h1>the leader in interactive vr</h1>
+            <p>
+              Founded in 2011,loopstudios has been producing world class virtual
+              reality projects for some of the best companies around the
+              globe.our award winning creations have tansformed businesses
+              through digital experiences that blind to their brand.
+            </p>
+          </div>
+        </div>
+        <div class="cards-section">
+          <div class="l-heading"><h1>our creations</h1></div>
+          <div class="cards">
+            <div class="card 1">
+              <div class="card-image">
+                <img src="./images/mobile/image-deep-earth.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>deep earth</h1>
+              </div>
+            </div>
+
+            <div class="card 2">
+              <div class="card-image">
+                <img src="./images/mobile/image-night-arcade.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>night arcade</h1>
+              </div>
+            </div>
+
+            <div class="card 3">
+              <div class="card-image">
+                <img src="./images/mobile/image-soccer-team.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>soccur team vr</h1>
+              </div>
+            </div>
+            <div class="card 4">
+              <div class="card-image">
+                <img src="./images/mobile/image-grid.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>the grid</h1>
+              </div>
+            </div>
+            <div class="card 5">
+              <div class="card-image">
+                <img src="./images/mobile/image-from-above.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>from up above vr</h1>
+              </div>
+            </div>
+            <div class="card 6">
+              <div class="card-image">
+                <img src="./images/mobile/image-pocket-borealis.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>pocket borealis</h1>
+              </div>
+            </div>
+            <div class="card 7">
+              <div class="card-image">
+                <img src="./images/mobile/image-curiosity.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>the curiosity</h1>
+              </div>
+            </div>
+            <div class="card 8">
+              <div class="card-image">
+                <img src="./images/mobile/image-fisheye.jpg" alt="" />
+              </div>
+              <div class="card-text">
+                <h1>make it fisheye</h1>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#">see all</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#">about</a></li>
+          <li><a href="#">carriers</a></li>
+          <li><a href="#">events</a></li>
+          <li><a href="#">products</a></li>
+          <li><a href="#">support</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-pinterest.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+      </div>
+      <div class="copyright">
+        <p>&copy; 2021 Loopstudios.All rights reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      // Grabbing the el from dom
+      const mainNav = document.getElementById("main-nav");
+      const hamburger = document.getElementById("hamburger");
+      const navClose = document.getElementById("nav-cross");
+      const body = document.getElementById("body");
+
+      // Hamburger menu functioning
+      hamburger.addEventListener("click", () => {
+        mainNav.classList.add("show-nav");
+        body.style.overflowY = "hidden";
+      });
+      navClose.addEventListener("click", () => {
+        mainNav.classList.remove("show-nav");
+        body.style.overflowY = "auto";
+      });
+    </script>
+  </body>
+</html>
